@@ -3,23 +3,25 @@
 #Date: 26/07/2568
 #Purpose: Calculate monthly budget and savings
 
-monthly_income = float(input("User's monthly income in (THB): "))  # รับเงินรายได้ต่อเดือนจากผู้ใช้
-rent_cost = float(input("Monthly rent/housing cost: "))  # รับค่าใช้จ่ายค่าเช่าที่พัก
-food_budget = float(input("Monthly food budget in (THB): "))  # รับค่าใช้จ่ายสำหรับอาหาร
-transportation_cost = float(input("Monthly transportation expenses: "))  # รับค่าใช้จ่ายสำหรับการขนส่ง
-entertainment_budget = float(input("Monthly entertainment budget: "))  # รับค่าใช้จ่ายสำหรับความบันเทิง
-emergency_fund_percent = float(input("Percentage to save for emergency (e.g., 10.5): "))  # รับเปอร์เซ็นต์สำหรับกองทุนฉุกเฉิน
-investment_percent = float(input("Percentage to invest (e.g. 15.0): "))  # รับเปอร์เซ็นต์สำหรับการลงทุน
+monthly_income = float(input("User's monthly income in (THB): "))
+rent_cost = float(input("Monthly rent/housing cost: "))
+food_budget = float(input("Monthly food budget in (THB): "))
+transportation_cost = float(input("Monthly transportation expenses: "))
+entertainment_budget = float(input("Monthly entertainment budget: "))
+emergency_fund_percent = float(input("Percentage to save for emergency (e.g., 10.5): "))
+investment_percent = float(input("Percentage to invest (e.g. 15.0): "))
+#รับ input ข้อมูลจากผู้ใช้
 
-Total_Fixed_Expenses = rent_cost + transportation_cost  # รวมค่าใช้จ่ายคงที่
-Total_Variable_Expenses = food_budget + entertainment_budget  # รวมค่าใช้จ่ายผันแปร
-Total_Expenses = Total_Fixed_Expenses + Total_Variable_Expenses  # รวมค่าใช้จ่ายทั้งหมด
-Remaining_Income = monthly_income - Total_Expenses  # หารายได้ที่เหลือหลังจากหักค่าใช้จ่ายทั้งหมด
-Emergency_Fund_Amount = monthly_income * (emergency_fund_percent / 100)  # คำนวณจำนวนเงินสำหรับกองทุนฉุกเฉิน
-Investment_Amount = monthly_income * (investment_percent / 100)  # คำนวณจำนวนเงินสำหรับการลงทุน
-Available_for_Savings = Remaining_Income - Emergency_Fund_Amount - Investment_Amount  # คำนวณจำนวนเงินที่สามารถเก็บออมได้
+Total_Fixed_Expenses = rent_cost + transportation_cost
+Total_Variable_Expenses = food_budget + entertainment_budget
+Total_Expenses = Total_Fixed_Expenses + Total_Variable_Expenses
+Remaining_Income = monthly_income - Total_Expenses
+Emergency_Fund_Amount = monthly_income * (emergency_fund_percent / 100)
+Investment_Amount = monthly_income * (investment_percent / 100)
+Available_for_Savings = Remaining_Income - Emergency_Fund_Amount - Investment_Amount
 
-Expense_Ratio = (Total_Expenses / monthly_income) * 100  # คำนวณสัดส่วนค่าใช้จ่ายต่อรายได้
+Expense_Ratio = (Total_Expenses / monthly_income) * 100
+#เป็นที่คำนวนข้อมูลที่ได้รับมาจากการ input
 
 print("\n=== MONTHLY BUDGET REPORT ===")  # รายงานงบประมาณรายเดือน
 print(f"Income: {monthly_income:.2f} THB")  # แสดงรายได้ต่อเดือน
