@@ -1,4 +1,4 @@
-# Empty tuple
+# Empty tuple#แก้ไขไม่ได้
 empty_tuple = ()
 another_empty_tuple = tuple()
 

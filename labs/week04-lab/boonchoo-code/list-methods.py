@@ -13,10 +13,10 @@ print(f"Index of banana: {fruits.index('banana')}")  # 1
 
 # Sorting
 numbers_copy = numbers.copy()
-numbers_copy.sort()                         # Sort in place
+numbers_copy.sort()                         # Sort in place#เรียงจากน้อยไปมาก
 print(f"Sorted: {numbers_copy}")           # [1, 1, 2, 3, 4, 5, 5, 6, 9]
 
-numbers_copy.sort(reverse=True)             # Sort descending
+numbers_copy.sort(reverse=True)             # Sort descending#มากน้อย
 print(f"Reverse sorted: {numbers_copy}")   # [9, 6, 5, 5, 4, 3, 2, 1, 1]
 
 # sorted() function - returns new list
