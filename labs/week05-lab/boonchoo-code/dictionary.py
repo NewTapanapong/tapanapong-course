@@ -18,7 +18,7 @@ mixed_dict = {
     "nested_dict": {"key": "value"},
     "boolean": True
 }
-
+#สองก้อนนี้เหมือนกัน
 # Using dict() constructor
 person = dict(name="Bob", age=25, city="Bangkok")
 
