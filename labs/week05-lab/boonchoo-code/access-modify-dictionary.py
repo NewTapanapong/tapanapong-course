@@ -7,13 +7,13 @@ student = {
 }
 
 # Accessing values by key
-print(f"Name: {student['name']}")           # Alice Smith
-print(f"Age: {student['age']}")             # 20
+print(f"Name: {student['name']}")           #Alice Smith
+print(f"Age: {student['age']}")             #20
 
 # Using get() method (safer)
-print(f"Major: {student.get('major')}")     # Computer Science
-print(f"Phone: {student.get('phone')}")     # None (key doesn't exist)
-print(f"Phone: {student.get('phone', 'Not provided')}")  # Default value
+print(f"Major: {student.get('major')}")     #Computer Science
+print(f"Phone: {student.get('phone')}")     #None (key doesn't exist)
+print(f"Phone: {student.get('phone', 'Not provided')}")  #Default value
 
 # Accessing nested data
 print(f"First course: {student['courses'][0]}")  # Python

@@ -15,11 +15,9 @@ Update age (by creating a new tuple)
 
 # Complete this program
 def personal_info_manager():
-    # Create initial person tuple
-    person = ("tapanapong", 19, "sattahip", "chonburi")  # name, age, city, country
+    person = ("tapanapong", 19, "sattahip", "chonburi")  
     hobbies = []
     while True:
-    # Your code here
         print("Tnformation")
         print("Name:",person[0])
         print('age: ',person[1])
