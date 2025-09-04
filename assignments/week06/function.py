@@ -41,6 +41,7 @@ def create_user_profile(username, age=18, premium=False):
         return username + "age:" + age + "Premium User"
     else:
         return username + "age:" + age + "Standard User"
+    
 """ เขียน function ชื่อ analyze_scores ที่มีคุณสมบัติดังนี้:
 
 รับ list ของคะแนน (ตัวเลข)
