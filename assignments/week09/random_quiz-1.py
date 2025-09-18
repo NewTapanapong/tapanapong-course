@@ -25,3 +25,19 @@ Example
     Congratulations! You won in 3 attempts!
 
 """
+import random
+
+def game_Random():
+    GA_Random = random.randint(1, 20)
+    print('Guess my number between 1 and 20 You have 6 attempts.')
+    for i in range(1,7):
+        print(f'ครั้งที {i}')
+        py=int(input('Enter number to win: '))
+        if py < GA_Random:
+            print('number is low')
+        elif py > GA_Random:
+            print('number is high')
+        elif py == GA_Random:
+            print(f'you win number is :{GA_Random}')
+            break
+game_Random()   
